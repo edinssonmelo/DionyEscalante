@@ -1,7 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter_Tight, Instrument_Sans, Instrument_Serif } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
 const interTight = Inter_Tight({
@@ -37,7 +36,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
   },
-    generator: 'v0.app'
+  generator: 'v0.app'
 }
 
 export default function RootLayout({
@@ -81,7 +80,6 @@ export default function RootLayout({
       </head>
       <body className="font-instrument_sans antialiased">
         {children}
-        <Analytics />
       </body>
     </html>
   )
