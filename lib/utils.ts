@@ -19,8 +19,8 @@ export function getImagePath(path: string): string {
   // Ensure path starts with /
   const normalizedPath = path.startsWith('/') ? path : `/${path}`
 
-  // Next.js with basePath will automatically handle the path during build
-  // For static export, we need to ensure the path is correct
-  // The basePath is automatically injected by GitHub Pages workflow
-  return normalizedPath
+  // Add basePath for GitHub Pages deployment
+  const basePath = '/DionyEscalante'
+
+  return `${basePath}${normalizedPath}`
 }
