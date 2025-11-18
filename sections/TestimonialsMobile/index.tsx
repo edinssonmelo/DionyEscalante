@@ -32,27 +32,27 @@ export const TestimonialsMobile = () => {
         <div className="w-full">
           <ul className="grid grid-cols-1 gap-6 list-none p-0">
             <TestimonialCardMobile
-              quote="El estudio de títulos que hicieron me salvó de comprar un apartamento con problemas. Encontraron 2 embargos que ni la inmobiliaria sabía. Vale cada peso, super profesionales."
-              authorName="María Fernanda Gómez"
+              quote="Contraté el estudio 360°. Encontraron alertas que me evitaron una mala compra. Muy claros con el informe y tiempos."
+              authorName="Ana María G."
               authorTitle="Compradora de vivienda"
-              authorImageUrl="https://realtymarketingpro.com/wp-content/uploads/2025/06/Carey.webp"
-              authorImageAlt="María"
+              authorImageUrl="/placeholder-user.jpg"
+              authorImageAlt="Ana María G."
               authorImageAspect="aspect-[auto_250_/_250]"
             />
             <TestimonialCardMobile
-              quote="Llevaba 8 meses con un inquilino que no pagaba. Ellos radicaron la restitución en 72 horas y me guiaron en todo el proceso. Recuperé mi apartamento en 3 meses. Excelente asesoría."
-              authorName="Carlos Andrés Ruiz"
+              quote="Radicaron la restitución en 72h y me explicaron paso a paso. En tres meses recuperé el inmueble. Gracias!"
+              authorName="Carlos R."
               authorTitle="Propietario arrendador"
-              authorImageUrl="https://realtymarketingpro.com/wp-content/uploads/2025/06/Omar-Ariza-294x300.webp"
-              authorImageAlt="Carlos"
+              authorImageUrl="/placeholder-user.jpg"
+              authorImageAlt="Carlos R."
               authorImageAspect="aspect-[auto_294_/_300]"
             />
             <TestimonialCardMobile
-              quote="Como administradora de PH tenía cartera morosa del 60%. Con su estrategia de cobro legal recuperamos casi todo en 6 meses. Muy claros explicando la Ley 675, los recomiendo."
-              authorName="Patricia Moreno"
+              quote="Nos ayudaron con cartera en PH. Se notó el manejo legal y la comunicación. Bajamos la mora notablemente."
+              authorName="Patricia M."
               authorTitle="Administradora P.H."
-              authorImageUrl="https://realtymarketingpro.com/wp-content/uploads/2025/06/Ivy-Maldonado-300x300.webp"
-              authorImageAlt="Patricia"
+              authorImageUrl="/placeholder-user.jpg"
+              authorImageAlt="Patricia M."
               authorImageAspect="aspect-[auto_300_/_300]"
             />
           </ul>

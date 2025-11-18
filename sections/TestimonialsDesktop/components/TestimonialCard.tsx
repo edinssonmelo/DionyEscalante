@@ -24,11 +24,15 @@ export const TestimonialCard = (props: TestimonialCardProps) => {
                 key={i}
                 className="text-amber-400 text-xl items-center box-border caret-transparent inline-flex justify-center leading-8"
               >
-                <img
-                  src="https://c.animaapp.com/mh45bcjb2ekNEj/assets/icon-23.svg"
-                  alt="Icon"
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
                   className="box-border caret-transparent h-5 w-5"
-                />
+                  aria-hidden="true"
+                >
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
               </div>
             ))}
           </div>
