@@ -1,3 +1,5 @@
+import { getImagePath } from "@/lib/utils"
+
 export const HeroContent = () => {
   return (
     <div className="box-border caret-transparent flex flex-col text-center z-[1] md:text-start">
@@ -39,21 +41,21 @@ export const HeroContent = () => {
             </div>
             <div className="shadow-[rgb(232,240,255)_1px_0px_3px_0px] box-border caret-transparent h-9 ml-[-11px] min-h-0 min-w-0 text-center w-9 rounded-[50%] md:min-h-[auto] md:min-w-[auto] md:text-start">
               <img
-                src="/images/design-mode/calgary-portrait-photographer-8.jpg"
+                src={getImagePath("/images/design-mode/calgary-portrait-photographer-8.jpg")}
                 alt="Avatar"
                 className="box-border caret-transparent h-9 max-w-full object-cover text-center w-9 rounded-[50%] md:text-start"
               />
             </div>
             <div className="shadow-[rgb(232,240,255)_1px_0px_3px_0px] box-border caret-transparent h-9 ml-[-11px] min-h-0 min-w-0 text-center w-9 rounded-[50%] md:min-h-[auto] md:min-w-[auto] md:text-start">
               <img
-                src="/images/design-mode/female-headshot_real-estate-headshots-800x534-1-e1759867270213.jpg"
+                src={getImagePath("/images/design-mode/female-headshot_real-estate-headshots-800x534-1-e1759867270213.jpg")}
                 alt="Avatar"
                 className="box-border caret-transparent h-9 max-w-full object-cover text-center w-9 rounded-[50%] md:text-start"
               />
             </div>
             <div className="shadow-[rgb(232,240,255)_1px_0px_3px_0px] box-border caret-transparent h-9 ml-[-11px] min-h-0 min-w-0 text-center w-9 rounded-[50%] md:min-h-[auto] md:min-w-[auto] md:text-start">
               <img
-                src="/images/design-mode/6410dc4fb595d07ad99fb65e_DSC_0189-Edit.webp"
+                src={getImagePath("/images/design-mode/6410dc4fb595d07ad99fb65e_DSC_0189-Edit.webp")}
                 alt="Avatar"
                 className="box-border caret-transparent h-9 max-w-full object-cover text-center w-9 rounded-[50%] md:text-start"
               />

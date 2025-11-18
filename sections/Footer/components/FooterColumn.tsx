@@ -1,3 +1,5 @@
+import { getImagePath } from "@/lib/utils"
+
 export type FooterColumnProps = {
   variant: "logo" | "marketing" | "services" | "contact"
 }
@@ -12,7 +14,7 @@ export const FooterColumn = (props: FooterColumnProps) => {
               <div className="box-border caret-transparent text-center md:text-left">
                 <figure className="box-border caret-transparent clear-both table text-center mx-auto md:mx-0">
                   <img
-                    src="/images/design-mode/RPM4-white.png"
+                    src={getImagePath("/images/design-mode/RPM4-white.png")}
                     alt="RMP Legal"
                     className="aspect-[auto_200_/_80] box-border caret-transparent max-w-full w-[180px]"
                   />

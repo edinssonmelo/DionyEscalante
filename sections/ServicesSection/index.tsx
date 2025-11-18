@@ -1,4 +1,5 @@
 import { ServiceList } from "@/sections/ServicesSection/components/ServiceList"
+import { getImagePath } from "@/lib/utils"
 
 export const ServicesSection = () => {
   return (
@@ -30,7 +31,7 @@ export const ServicesSection = () => {
               <figure className="w-full mx-auto">
                 <div className="relative h-0 pb-[70%]">
                   <img
-                    src="/images/design-mode/services.png"
+                    src={getImagePath("/images/design-mode/services.png")}
                     alt="Servicios legales inmobiliarios - Documentos, contratos y protección patrimonial"
                     className="absolute h-full w-full object-cover object-center rounded-lg left-0 top-0 opacity-80"
                     style={{ filter: "grayscale(10%) contrast(105%)" }}

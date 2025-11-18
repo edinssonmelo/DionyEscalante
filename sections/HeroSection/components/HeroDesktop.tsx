@@ -3,10 +3,12 @@
 import { HeroContent } from "./HeroContent"
 import { useEffect, useState } from "react"
 
+import { getImagePath } from "@/lib/utils"
+
 const HERO_IMAGES = [
   "https://realtymarketingpro.com/wp-content/uploads/2025/09/RMP-Hero-6-2.png",
-  "/images/design-mode/portada2.png",
-  "/images/design-mode/portada3.png",
+  getImagePath("/images/design-mode/portada2.png"),
+  getImagePath("/images/design-mode/portada3.png"),
 ]
 
 export const HeroDesktop = () => {

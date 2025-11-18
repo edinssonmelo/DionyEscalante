@@ -1,3 +1,5 @@
+import { getImagePath } from "@/lib/utils"
+
 export const HeroContentMobile = () => {
   return (
     <div className="flex flex-col text-center md:text-start">
@@ -37,21 +39,21 @@ export const HeroContentMobile = () => {
             </div>
             <div className="h-9 w-9 rounded-full shadow-md -ml-3">
               <img
-                src="/images/design-mode/calgary-portrait-photographer-8.jpg"
+                src={getImagePath("/images/design-mode/calgary-portrait-photographer-8.jpg")}
                 alt="Avatar"
                 className="h-9 w-9 object-cover rounded-full"
               />
             </div>
             <div className="h-9 w-9 rounded-full shadow-md -ml-3">
               <img
-                src="/images/design-mode/female-headshot_real-estate-headshots-800x534-1-e1759867270213.jpg"
+                src={getImagePath("/images/design-mode/female-headshot_real-estate-headshots-800x534-1-e1759867270213.jpg")}
                 alt="Avatar"
                 className="h-9 w-9 object-cover rounded-full"
               />
             </div>
             <div className="h-9 w-9 rounded-full shadow-md -ml-3">
               <img
-                src="/images/design-mode/6410dc4fb595d07ad99fb65e_DSC_0189-Edit.webp"
+                src={getImagePath("/images/design-mode/6410dc4fb595d07ad99fb65e_DSC_0189-Edit.webp")}
                 alt="Avatar"
                 className="h-9 w-9 object-cover rounded-full"
               />
