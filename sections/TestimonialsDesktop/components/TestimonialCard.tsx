@@ -44,12 +44,20 @@ export const TestimonialCard = (props: TestimonialCardProps) => {
         </div>
         <div className="items-center box-border caret-transparent flex justify-center mt-5">
           <div className="box-border caret-transparent min-h-0 min-w-0 md:min-h-[auto] md:min-w-[auto] flex items-center">
-            <div className="box-border caret-transparent w-20 h-20 overflow-hidden mr-8 rounded-[10px] flex-shrink-0">
+            <div className="box-border caret-transparent w-20 h-20 overflow-hidden mr-8 rounded-[10px] flex-shrink-0 bg-slate-200">
               <div className="relative box-border caret-transparent w-full h-full">
                 <img
-                  src={props.imageUrl || "/placeholder.svg"}
+                  src={props.imageUrl || "/placeholder-user.jpg"}
                   alt={props.imageAlt}
                   className="absolute w-full h-full object-cover rounded-[10px]"
+                  loading="lazy"
+                  onError={(e) => {
+                    // Fallback si la imagen no carga
+                    const target = e.target as HTMLImageElement
+                    if (target.src !== "/placeholder-user.jpg" && !target.src.includes("placeholder-user.jpg")) {
+                      target.src = "/placeholder-user.jpg"
+                    }
+                  }}
                 />
               </div>
             </div>

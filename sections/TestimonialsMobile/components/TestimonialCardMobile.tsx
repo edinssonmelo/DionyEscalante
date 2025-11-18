@@ -38,12 +38,20 @@ export const TestimonialCardMobile = (props: TestimonialCardMobileProps) => {
         </div>
         <div className="items-center box-border caret-transparent flex justify-center mt-5">
           <div className="box-border caret-transparent min-h-[auto] min-w-[auto] md:min-h-0 md:min-w-0">
-            <div className="box-border caret-transparent w-20 overflow-hidden mr-8 rounded-[10px]">
+            <div className="box-border caret-transparent w-20 overflow-hidden mr-8 rounded-[10px] bg-slate-200">
               <div className="relative box-border caret-transparent h-0 pb-[100%]">
                 <img
-                  src={props.authorImageUrl || "/placeholder.svg"}
+                  src={props.authorImageUrl || "/placeholder-user.jpg"}
                   alt={props.authorImageAlt}
                   className={`absolute ${props.authorImageAspect} bg-no-repeat bg-cover box-border caret-transparent h-full max-w-full object-cover w-full bg-center left-0`}
+                  loading="lazy"
+                  onError={(e) => {
+                    // Fallback si la imagen no carga
+                    const target = e.target as HTMLImageElement
+                    if (target.src !== "/placeholder-user.jpg" && !target.src.includes("placeholder-user.jpg")) {
+                      target.src = "/placeholder-user.jpg"
+                    }
+                  }}
                 />
               </div>
             </div>
